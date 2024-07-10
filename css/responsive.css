@@ -15,7 +15,6 @@
   }
 
   .nav-items {
-    display: none;
     flex-direction: column;
   }
 
@@ -27,9 +26,36 @@
     margin-bottom: 1rem;
   }
 
-  .ham-menu {
+  .ham-menu,
+  .ham-btn {
     display: flex;
+  }
 
+  .ham-btn {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ham-btn:hover {
+    cursor: pointer;
+  }
+
+  .ham-btn span {
+    display: block;
+    background-color: var(--light-color);
+    height: 3px;
+    width: 20px;
+    margin: 4px auto;
+    border-radius: 10px;
+  }
+
+  #cb-ham:checked~.nav-items {
+    display: flex;
+  }
+
+  #cb-ham:not(:checked)~.nav-items {
+    display: none;
   }
 }
 

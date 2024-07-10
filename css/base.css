@@ -41,12 +41,12 @@ html {
 
 h1 {
   font-family: var(--alata);
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--light-color);
 }
 
