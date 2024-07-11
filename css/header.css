@@ -41,7 +41,6 @@ nav {
   border-bottom: 2px solid var(--light-color);
 }
 
-.ham-menu,
 .ham-btn {
   display: none;
   justify-content: center;
