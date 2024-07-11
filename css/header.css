@@ -2,6 +2,7 @@ header {
   display: flex;
   align-items: center;
   background-color: var(--surface-color);
+  border-bottom: 1px solid var(--light-color);
   position: sticky;
   top: 0;
   height: max-content;
@@ -38,7 +39,7 @@ nav {
 }
 
 .nav-items a:hover {
-  border-bottom: 2px solid var(--light-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .ham-btn {

@@ -23,7 +23,7 @@
       </a>
     </div>
     <nav>
-      <input type="checkbox" name="" id="cb-ham">
+      <input type="checkbox" id="cb-ham">
       <div class="ham-btn">
         <label for="cb-ham">
           <span></span>
@@ -32,41 +32,56 @@
         </label>
       </div>
       <div class="nav-items" id="nav-items">
-        <a href="#">About me</a>
-        <a href="#">Projects</a>
-        <a href="#">Experience</a>
-        <a href="#">Contact</a>
+        <a class="highlight" href="#about">About me</a>
+        <a class="highlight" href="#">Projects</a>
+        <a class="highlight" href="#">Experience</a>
+        <a class="highlight" href="#">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="main-img">
-        <img src="./img/logo.png" alt="Logo">
+        <img src="./img/laptop-icon.webp" alt="Logo">
       </div>
       <div class="dev-info-container">
         <div class="dev-info">
-          <h2>WELCOME, I AM ALEXIS</h2>
-          <h3>Job role title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consequuntur tenetur, ratione quo autem
-            ipsum nulla consequatur culpa consectetur placeat, eveniet dolores nam, deserunt unde ab nemo sapiente sit
-            qui.</p>
+          <h2>WELCOME, I AM <span class="highlight">ALEXIS</span></h2>
+          <h3>Web Developer</h3>
+          <p><b>I'm mainly interested in web development.</b> Currently studying a degree in Computer Systems
+            Engineering at Instituto Tecnológico de Mexicali. </p>
+          <br>
+          <p><b>I like to design. Coding the design, even more.</b> Making designs that are intuitive, minimalist and
+            responsive is one of my priorities.</p>
+          <br>
+          <p>I like videogames and cats. 🎮 🐈</p>
         </div>
         <div class="dev-skills">
           <h3>My skills</h3>
           <div class="skills">
-            <p>SKILL</p>
-            <p>SKILL</p>
-            <p>SKILL</p>
-            <p>SKILL</p>
-            <p>TECH</p>
-            <p>TECH</p>
-            <p>TECH</p>
-            <p>TECH</p>
+            <p>Java</p>
+            <p>Python</p>
+            <p>C#</p>
+            <p>PHP</p>
+            <p>SQL</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <input type="checkbox" id="cb-skills">
+            <p class="more-skills">Bootstrap</p>
+            <p class="more-skills">Tailwind</p>
+            <p class="more-skills">React</p>
+            <p class="more-skills">Django</p>
+            <p class="more-skills">OOP</p>
+            <p class="more-skills">Networking</p>
+            <div class="btn-skills">
+              <label for="cb-skills">
+                <p></p>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
     </section>
   </main>
 

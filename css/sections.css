@@ -2,7 +2,6 @@
 .about-section {
   display: flex;
   flex-direction: row-reverse;
-  /* background-color: chocolate; */
 }
 
 .main-img {
@@ -10,7 +9,6 @@
   justify-content: center;
   align-items: center;
   width: 40%;
-  /* border: 2px solid var(--light-color); */
 }
 
 .main-img img {
@@ -26,7 +24,6 @@
   justify-content: center;
   align-items: center;
   width: 60%;
-  /* border: 2px solid blue; */
 }
 
 .dev-info,
@@ -43,7 +40,6 @@
 .skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* justify-items: center; */
   gap: 15px;
   margin-top: 1rem;
   width: 60%;
@@ -54,6 +50,36 @@
   border: 1px solid var(--light-color);
   border-radius: 5px;
   text-align: center;
-  width: 4rem;
+  width: 6.2rem;
   padding: 0.5rem;
+}
+
+.more-skills,
+#cb-skills {
+  display: none;
+}
+
+.btn-skills p {
+  background-color: var(--background-color);
+}
+
+.btn-skills p:hover {
+  background-color: var(--surface-color);
+  cursor: pointer;
+}
+
+#cb-skills:checked~.btn-skills p::after {
+  content: "Show less...";
+}
+
+#cb-skills:not(:checked)~.btn-skills p::after {
+  content: "Show more...";
+}
+
+#cb-skills:checked~.more-skills {
+  display: block;
+}
+
+#cb-skills:not(:checked)~.more-skills {
+  display: none;
 }
