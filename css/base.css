@@ -45,6 +45,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  padding-bottom: 3rem;
+}
+
 h1 {
   font-family: var(--alata);
   font-size: 1.8rem;
@@ -69,4 +73,10 @@ p {
 
 .highlight {
   color: var(--secondary-color);
+}
+
+.container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
